@@ -11,6 +11,8 @@
 
         <script src="calculator.js"></script>
 
+        <link rel="stylesheet" href="styles.css">
+
     </head>
 
     <body>
@@ -23,40 +25,43 @@
 
             <div class="col-2"></div>
             <div class="col">
+
+                <div class="calculator">
+
+                    <input id="screen" type="text" disabled style="text-align: right;">
+                    <span style="display: block;">
                 
-                <input id="screen" type="text" disabled style="text-align: right;">
-                <span style="display: block;">
-                
-                    <button id="one" data-number onclick="display('1')">
+                    <button id="one" data-number onclick="display('1')" class="btn btn-info">
                         1
                     </button>
 
-                    <button id="two" data-number onclick="display('2')">
+                    <button id="two" data-number onclick="display('2')" class="btn btn-info">
                         2
                     </button>
 
-                    <button id="three" data-number onclick="display('3')">
+                    <button id="three" data-number onclick="display('3')" class="btn btn-info">
                         3
                     </button>
 
-                    <button id="plus" onclick="display('+')">
+                    <button id="plus" onclick="display('+')" class="btn btn-info">
                         +
                     </button>
 
-                    <button id="equals" onclick="solve()">
+                    <button id="equals" onclick="solve()" class="btn btn-info">
                         =
                     </button>
 
-                    <button id="clear" onclick="clear()">
+                    <button id="clear" onclick="clearScreen()" class="btn btn-info">
                         clear
                     </button>
 
-                </span>
+                    </span>
+
+                </div>
 
             </div>
-            <div class="col-2">
 
-            </div>
+            <div class="col-2"></div>
 
         </div>
 
@@ -66,35 +71,41 @@
 
             <div class="col">
 
-                <span style="display: block;">
+                <div class="calculator">
+
+                    <span style="display: block;">
                 
-                    <button id="four" data-number onclick="display('4')">
-                        4
-                    </button>
+                        <button id="four" data-number onclick="display('4')" class="btn btn-info">
+                            4
+                        </button>
+    
+                        <button id="five" data-number onclick="display('5')" class="btn btn-info">
+                            5
+                        </button>
+    
+                        <button id="six" data-number onclick="display('6')" class="btn btn-info">
+                            6
+                        </button>
+    
+                        <button id="-" data-number onclick="display('-')" class="btn btn-info">
+                            -
+                        </button>
+    
+                        <button id="times" onclick="display('*')" class="btn btn-info">
+                            *
+                        </button>
+    
+                        <button id="divided" onclick="display('/')" class="btn btn-info">
+                            /
+                        </button>
+    
+                    </span>
 
-                    <button id="five" data-number onclick="display('5')">
-                        5
-                    </button>
-
-                    <button id="six" data-number onclick="display('6')">
-                        6
-                    </button>
-
-                    <button id="-" data-number onclick="display('-')">
-                        -
-                    </button>
-
-                    <button id="times" onclick="display('*')">
-                        *
-                    </button>
-
-                    <button id="divided" onclick="display('/')">
-                        /
-                    </button>
-
-                </span>
+                </div>
 
             </div>
+
+            <div class="col-2"></div>
 
         </div>
 
@@ -104,27 +115,32 @@
 
             <div class="col">
 
-                <span style="display: block;">
+                <div class="calculator">
+
+                    <span style="display: block;">
                 
-                    <button id="seven" data-number onclick="display('7')">
-                        7
-                    </button>
-
-                    <button id="eight" data-number onclick="display('8')">
-                        8
-                    </button>
-
-                    <button id="nine" data-number onclick="display('9')">
-                        9
-                    </button>
-
-                    <button id="zero" data-number onclick="display('0')">
-                        0
-                    </button>
-
-                </span>
+                        <button id="seven" data-number onclick="display('7')" class="btn btn-info">
+                            7
+                        </button>
+    
+                        <button id="eight" data-number onclick="display('8')" class="btn btn-info">
+                            8
+                        </button>
+    
+                        <button id="nine" data-number onclick="display('9')" class="btn btn-info">
+                            9
+                        </button>
+    
+                        <button id="zero" data-number onclick="display('0')" class="btn btn-info">
+                            0
+                        </button>
+    
+                    </span>
+                </div>
 
             </div>
+
+            <div class="col-2"></div>
 
         </div>
 

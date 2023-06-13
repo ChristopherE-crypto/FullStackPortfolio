@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    background-color: darkcyan;
+}
+
+.calculator {
+    background-color: wheat;
+    min-width: 100%;
+    margin: 0 auto;
+}
+
+#screen {
+    background-color: beige;
+    border-color: thistle;
+    border-width: 3px;
+    margin-bottom: 5%;
+    min-width: 100%;
+    color: black;
+    font-weight: bold;
+}
+
+button {
+    background-color: peru;
+}

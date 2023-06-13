@@ -10,6 +10,6 @@ function solve() {
     return result;
 }
 
-function clear() {
-    document.getElementById('screen').value = '';
+function clearScreen() {
+    document.getElementById('screen').value = "";
 }
